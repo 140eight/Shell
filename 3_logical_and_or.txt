@@ -1,0 +1,9 @@
+mkdir /tmp/bak && cp test.txt /tmp/bak
+cp test.txt /tmp/bak || cp test.txt /tmp
+
+
+#!/bin/bash
+HOST="google.com"
+ping -c -1 $HOST && echo "$HOST reachable"
+ping -c -1 $HOST || echo "$HOST unrachable"
+
